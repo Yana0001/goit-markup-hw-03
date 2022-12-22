@@ -62,7 +62,6 @@ header {
   line-height: 1.2;
   font-weight: 700;
   text-decoration: none;
-
 }
 
 .span-web {
@@ -125,6 +124,9 @@ header {
 
 .hero {
   background-color: var(--dark-grey-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -133,6 +135,7 @@ header {
   line-height: 1.4;
   font-weight: 900;
   text-transform: uppercase;
+  padding-bottom: 30px;
 }
 
 .hero-button {
