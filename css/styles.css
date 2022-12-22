@@ -1,7 +1,7 @@
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
-  --white-color: #ffffff;
+  --white-color: rgb(255, 255, 255);
   --accent: #2196f3;
   --grey: rgba(255, 255, 255, 0.6);
   --secondary-background-color: #f5f4fa;
@@ -143,12 +143,25 @@ header {
   color: var(--white-color);
   font-size: 16px;
   line-height: 1.9;
-  font-weight: 700;
   cursor: pointer;
+  width: 216px;
+  height: 50px;
 }
+
+/* Features */
 
 .features {
   background-color: var(--white-color);
+}
+
+.feature-list {
+  display: flex;
+  gap: 30px;
+  margin: 94px 0;
+}
+
+.feature-list li {
+  width: 270px;
 }
 
 .title {
@@ -156,23 +169,40 @@ header {
   line-height: 1.1;
   font-weight: 700;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .text {
   font-size: 14px;
   line-height: 1.7;
   color: var(--secondary-text-color);
+  margin: 0;
+}
+
+.feature-list-section {
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
+.feature-list-section ul {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
 }
 
 .section-title {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .section-title img {
   width: 370px;
 }
+
+/* Team */
 
 .team {
   background-color: var(--secondary-background-color);
@@ -182,19 +212,38 @@ header {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .team-subtitle {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 500;
+  padding: 30px 0 10px 0;
 }
 
 .team-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.2;
+  margin: 0;
 }
+
+.team-list {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+
+.team-list li {
+  background-color: var(--white-color);
+  height: 368px;
+  text-align: center;
+}
+
+/* Footer */
 
 .footer {
   background-color: var(--dark-grey-color);
@@ -210,6 +259,7 @@ header {
   line-height: 1.2;
   font-weight: 700;
   text-decoration: none;
+  padding-top: 60px;
 }
 
 .white-studio {
@@ -234,6 +284,16 @@ header {
 
 .footer-address a {
   font-style: normal;
+}
+
+.footer-address{
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+.footer-address:nth-child(3) {
+ padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
