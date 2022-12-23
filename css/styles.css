@@ -17,11 +17,11 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
   margin: 0;
 }
 
-a{ 
+a {
   text-decoration: none;
 }
 
@@ -30,7 +30,6 @@ ul {
   margin: 0;
   list-style: none;
 }
-
 
 body {
   background-color: var(--white-color);
@@ -44,6 +43,10 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -160,12 +163,14 @@ header {
 
 .features {
   background-color: var(--white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .feature-list {
   display: flex;
   gap: 30px;
-  margin: 94px 0;
+  /* margin: 94px 0; */
 }
 
 .feature-list li {
@@ -180,22 +185,23 @@ header {
   padding-bottom: 10px;
 }
 
+.our-features {
+  margin-bottom: 94px;
+}
+
 .text {
   font-size: 14px;
   line-height: 1.7;
   color: var(--secondary-text-color);
-  margin: 0;
 }
 
 .feature-list-section {
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 .feature-list-section ul {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .section-title {
@@ -214,6 +220,7 @@ header {
 
 .team {
   background-color: var(--secondary-background-color);
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -236,19 +243,20 @@ header {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.2;
-  margin: 0;
 }
 
 .team-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 .team-list li {
   background-color: var(--white-color);
   height: 368px;
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
@@ -265,6 +273,7 @@ footer {
   line-height: 1.2;
   font-weight: 700;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .white-studio {
@@ -291,20 +300,20 @@ footer {
   font-style: normal;
 }
 
-.footer-address {
-  padding-top: 20px;
-  padding-bottom: 9px;
-}
-
-.footer-address:nth-child(3) {
-  padding-top: 20px;
-  padding-bottom: 60px;
-}
-
 .footer-logo {
   font-size: 26px;
 }
 
 .contact a {
   color: var(--grey);
+}
+
+.contact li{
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.contact li:nth-child(2){
+  padding-top: 0;
+ padding-bottom: 0;
 }
